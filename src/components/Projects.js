@@ -14,12 +14,15 @@ const ProjectsContainer = styled.div`
 `
 const Project = styled.div`
   background:#87ceeb;
-  width:80%;
+  background:#808080;
+  color:white;
+  width:100%;
   cursor:pointer;
-  margin:10px;
+  margin-bottom:10px;
+  margin-top:10px;
   padding:10px;
   &:hover{
-    background:#74b3ce;
+    background:#666666;
   }
   font-size:20px;
 `
@@ -136,18 +139,22 @@ function Projects() {
     <ProjectsContainer>
       <Modal isShow={show} close={() => setShow((p) => !p)} title={project.projectName} about={about} ></Modal>
 
-      <h1>Nodejs Projects</h1>
-      <Project onClick={() => setShow(true)}>beSocial</Project>
-      <Project onClick={() => setShow(true)}>beSocial</Project>
-      <Project onClick={() => setShow(true)}>beSocial</Project>
-      <Project onClick={() => setShow(true)}>beSocial</Project>
-      <br></br>
+      <div style={{padding:'30px',background:'lightgray',width:'80%'}}>
+        <h1>Nodejs Projects</h1>
+        <Project onClick={() => setShow(true)}>beSocial</Project>
+        <Project onClick={() => setShow(true)}>beSocial</Project>
+        <Project onClick={() => setShow(true)}>beSocial</Project>
+        <Project onClick={() => setShow(true)}>beSocial</Project>
+      </div>
 
-      <h1>DSA Visualizations</h1>
-      <Project onClick={() => setShow(true)}>beSocial</Project>
-      <Project onClick={() => setShow(true)}>beSocial</Project>
-      <Project onClick={() => setShow(true)}>beSocial</Project>
-      <Project onClick={() => setShow(true)}>beSocial</Project>
+      <br></br>
+      <div style={{padding:'30px',background:'lightgray',width:'80%'}}>
+        <h1>DSA Visualizations</h1>
+        <Project onClick={() => setShow(true)}>beSocial</Project>
+        <Project onClick={() => setShow(true)}>beSocial</Project>
+        <Project onClick={() => setShow(true)}>beSocial</Project>
+        <Project onClick={() => setShow(true)}>beSocial</Project>
+      </div>
       <br></br>
 
     </ProjectsContainer>

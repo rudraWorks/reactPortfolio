@@ -26,15 +26,15 @@ function Contact() {
       
       <InnerDiv>
           <Img src='https://cdn-icons-png.flaticon.com/512/174/174857.png'></Img>
-          <a href='https://www.linkedin.com/in/merudra/' target='_blank'> <h1>https://www.linkedin.com/in/merudra/</h1></a>
+          <a href='https://www.linkedin.com/in/merudra/' target='_blank'> <h3>https://www.linkedin.com/in/merudra/</h3></a>
       </InnerDiv>
       <InnerDiv>
         <Img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1b7Zb4f7LTEWo6_1mtrkyokm7LmL7zA8-5iBJnC_6&s'></Img>
-        <a href='mailto:merudra.official@gmail.com' target='_blank'> <h1>merudra.official@gmail.com</h1></a>
+        <a href='mailto:merudra.official@gmail.com' target='_blank'> <h3>merudra.official@gmail.com</h3></a>
       </InnerDiv>
       <InnerDiv>
          <Img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png'></Img>
-         <a href='https://www.instagram.com/rp_singh_1008/' target='_blank'> <h1>https://www.instagram.com/rp_singh_1008/</h1></a>
+         <a href='https://www.instagram.com/rp_singh_1008/' target='_blank'> <h3>https://www.instagram.com/rp_singh_1008/</h3></a>
       </InnerDiv>
 
     </Div>
