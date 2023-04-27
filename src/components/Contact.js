@@ -37,7 +37,7 @@ function Contact() {
          <a href='https://www.instagram.com/rp_singh_1008/' target='_blank'> <h3>https://www.instagram.com/rp_singh_1008/</h3></a>
       </InnerDiv>
 
-    </Div>
+    </Div> 
   )
 }
 
