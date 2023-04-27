@@ -25,6 +25,7 @@ const Right = styled.div`
   // background:red;
   font-size:20px;
   padding:10px;
+  text-align:justify;
 `
 function Home() {
   return (
