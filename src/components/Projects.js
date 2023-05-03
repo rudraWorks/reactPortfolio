@@ -26,106 +26,107 @@ const Project = styled.div`
   }
   font-size:20px;
 `
-const Line = styled.div`
+const BoxDiv = styled.div`
+  background:gray;
+  display:flex;
+  flex-direction:column;
   width:100%;
-  background:black;
-  height:1px;
+  padding:5px;
+  margin-bottom:30px;
+`
+const InnterBoxDiv = styled.div`
+  background:darkgray;
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  padding:5px;
+  margin-bottom:10px;
+`
+const Row = styled.div`
+  background:lightgray;
+  margin:3px;
+  padding:3px;
 `
 
-const about = (
+const about = ( 
   <>
-    <img style={{maxWidth:'100%',minWidth:'200px'}} src='https://rudrapratap.netlify.app/assests/bSocialLogo.PNG'></img>
-    <ul>
-      <li> beSocial is a social media cum blogging platform. </li>
-      <li> Users can share posts (including images). </li>
-      <li> Users can change their display picture (dp).</li>
-      <li> Users can follow/unfollow other users.</li>
-      <li>Logged in users, can like and comment on posts. </li>
-      <li> Users can search other users by their user id.</li>
-      <li>Users can update their bio, name, age etc. (basic info).</li>
-      <li>Users can't share a post having profane words. </li>
-    </ul>
-    <br></br>
-    <h2>Tech Stack</h2>
-    <br></br>
-    <ul>
-      <li><b>Backend</b>
-        <ul style={{marginLeft:'30px'}}>
-          <li>Nodejs</li>
-          <li>Expressjs</li>
-          <li>Mongoose (ORM)</li>
-          <li>EJS (Template Engine)</li>
-        </ul>
-      </li>
-    </ul>
+  <BoxDiv>
+    <h1 style={{textAlign:'center'}}>About</h1>
+    <Row>
+      <img style={{maxWidth:'100px'}} src='https://rudrapratap.netlify.app/assests/bSocialLogo.PNG'></img>
+</Row>
+    <Row>beSocial is a social media cum blogging platform</Row>
+    <Row>Users can share posts (including images)</Row>
+    <Row> Users can change their display picture (dp)</Row>
+    <Row>Users can follow/unfollow other users</Row>
+    <Row>Logged in users, can like and comment on posts</Row>
+    <Row>Users can search other users by their user id</Row>
+    <Row>Users can update their bio, name, age etc. (basic info)</Row>
+    <Row>Users can't share a post having profane words</Row>
+  </BoxDiv>
 
-    <br></br>
-    <ul>
-      <li><b>Frontend</b>
-        <ul style={{marginLeft:'30px'}}>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-        </ul>
-      </li>
-    </ul>
-
-    <br></br>
-    <ul>
-      <li><b>Database</b>
-        <ul style={{marginLeft:'30px'}}>
-          <li>Mongodb</li>
-        </ul>
-      </li>
-    </ul>
-
-    <br></br>
-    <ul>
-      <li><b>User Authentication </b>
-        <ul style={{marginLeft:'30px'}}>
-          <li>Jsonwebtoken (JWT)</li>
-        </ul>
-      </li>
-    </ul>
-
-    <br></br>
-    <ul>
-      <li><b>Image Manipulation</b>
-        <ul style={{marginLeft:'30px'}}>
-          <li>Multer</li>
-          <li>Sharp</li>
-        </ul>
-      </li>
-    </ul>
-
-    <br></br>
-    <ul>
-      <li><b>Other NPM Libraries</b>
-        <ul style={{marginLeft:'30px'}}>
-          <li>Moment (for time manipulation)</li>
-          <li>cookie-parser (for parsing cookies of loggedin users)</li>
-          <li>bad-words (to check for profanity inside posts)</li>
-          <li>dot-env (to manage jwt signatures and Mongodb Atlas cloud db url)</li>
-        </ul>
-      </li>
-    </ul>
-
-    <br></br>
-    <ul>
-      <li><b>Tools</b>
-        <ul style={{marginLeft:'30px'}}>
-          <li>Github (to host the project online)</li>
-          <li>Git (for version controlling)</li>
-        </ul>
-      </li>
-    </ul>
-
-    <br></br>
+  <BoxDiv>
+  <h1 style={{textAlign:'center'}}>Tech Stack</h1>
+  <InnterBoxDiv>
+    <h2>Backend</h2>
+    <Row>Nodejs</Row>
+    <Row>Expressjs</Row>
+    <Row>Mongoose (ORM)</Row>
+    <Row>EJS (Template Engine)</Row>
+  </InnterBoxDiv>
+  <InnterBoxDiv>
+    <h2>Frontend</h2>
+    <Row>HTML</Row>
+    <Row>CSS</Row>
+    <Row>Javascript</Row>
+  </InnterBoxDiv>
+  <InnterBoxDiv>
+    <h2>Database</h2>
+    <Row>Mongodb</Row>
+  </InnterBoxDiv>
+  <InnterBoxDiv>
+    <h2>User Authentication</h2>
+    <Row>Jsonwebtoken</Row>
+  </InnterBoxDiv>
+  
+  <InnterBoxDiv>
+    <h2>Image Manipulation</h2>
+    <Row>Multer</Row>
+    <Row>Sharp</Row>
+  </InnterBoxDiv>
+  <InnterBoxDiv>
+    <h2>Other NPM Libraries</h2>
+    <Row>Moment (for time manipulation)</Row>
+    <Row>cookie-parser (for parsing cookies of loggedin users)</Row>
+    <Row>bad-words (to check for profanity inside posts)</Row>
+    <Row>dot-env (to manage jwt signatures and Mongodb Atlas cloud db url)</Row>
+  </InnterBoxDiv>
+  <InnterBoxDiv>
+    <h2>Tools</h2>
+    <Row>Github (to host the project online)</Row>
+    <Row>Git (for version controlling)</Row>
+  </InnterBoxDiv>
+  <InnterBoxDiv>
     <h2>Deployment</h2>
-    <br></br>
-    <li>Render.com</li>
+    <Row>Render.com</Row>
+  </InnterBoxDiv>
 
-    
+
+  </BoxDiv>
+  <BoxDiv>
+  <h1 style={{textAlign:'center'}}>Snapshots</h1>
+  <Row>
+    <img style={{width:'100%'}} src='https://rudrapratap.netlify.app/assests/besocial/homepage.PNG'></img>
+  </Row>
+  <Row>
+    <img style={{width:'100%'}} src='https://rudrapratap.netlify.app/assests/besocial/post1.PNG'></img>
+  </Row>
+  <Row>
+    <img style={{width:'100%'}} src='https://rudrapratap.netlify.app/assests/besocial/user1.PNG'></img>
+  </Row>
+  </BoxDiv>
+
+
   </>
 
 
@@ -142,9 +143,13 @@ function Projects() {
       <div style={{padding:'30px',background:'lightgray',width:'80%'}}>
         <h1>Nodejs Projects</h1>
         <Project onClick={() => setShow(true)}>beSocial</Project>
-        <Project onClick={() => setShow(true)}>beSocial</Project>
-        <Project onClick={() => setShow(true)}>beSocial</Project>
-        <Project onClick={() => setShow(true)}>beSocial</Project>
+        <Project onClick={() => setShow(true)}>liveType</Project>
+        <Project onClick={() => setShow(true)}>typeMaster</Project>
+        <Project onClick={() => setShow(true)}>Live Chat Application</Project>
+        <Project onClick={() => setShow(true)}>Book Management System</Project>
+        <Project onClick={() => setShow(true)}>Weather App</Project>
+
+
       </div>
 
       <br></br>
