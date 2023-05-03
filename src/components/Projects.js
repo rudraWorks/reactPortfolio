@@ -13,39 +13,41 @@ const ProjectsContainer = styled.div`
       padding-top:30px;
 `
 const Project = styled.div`
-  background:#87ceeb;
-  background:#808080;
-  color:white;
+  background:#cccccc;
   width:100%;
   cursor:pointer;
   margin-bottom:10px;
   margin-top:10px;
   padding:10px;
   &:hover{
-    background:#666666;
+    background:#808080;
   }
   font-size:20px;
 `
 const BoxDiv = styled.div`
-  background:gray;
+  background:#999999;
+
   display:flex;
   flex-direction:column;
   width:100%;
   padding:5px;
   margin-bottom:30px;
+  // border:1px solid black;
 `
 const InnterBoxDiv = styled.div`
-  background:darkgray;
+  background:#808080;
   display:flex;
   flex-direction:column;
   width:100%;
   padding:5px;
   margin-bottom:10px;
+  // border:1px solid black;
 `
 const Row = styled.div`
-  background:lightgray;
+  background:#cccccc;
   margin:3px;
   padding:3px;
+  // border:1px solid black;
 `
 
 const about = ( 
@@ -132,6 +134,14 @@ const about = (
 
 )
 
+const ProjectSection = styled.div`
+
+  padding:20px;
+  background:#999999;
+  width:80%;
+  margin-bottom:40px;
+`
+
 function Projects() {
   const [show, setShow] = useState(false)
   const [project, setProject] = useState({ projectName: 'beSocial', projectDescription: 'it is a social media site' })
@@ -140,7 +150,7 @@ function Projects() {
     <ProjectsContainer>
       <Modal isShow={show} close={() => setShow((p) => !p)} title={project.projectName} about={about} ></Modal>
 
-      <div style={{padding:'30px',background:'lightgray',width:'80%'}}>
+      <ProjectSection>
         <h1>Nodejs Projects</h1>
         <Project onClick={() => setShow(true)}>beSocial</Project>
         <Project onClick={() => setShow(true)}>liveType</Project>
@@ -148,19 +158,16 @@ function Projects() {
         <Project onClick={() => setShow(true)}>Live Chat Application</Project>
         <Project onClick={() => setShow(true)}>Book Management System</Project>
         <Project onClick={() => setShow(true)}>Weather App</Project>
+      </ProjectSection>
 
-
-      </div>
-
-      <br></br>
-      <div style={{padding:'30px',background:'lightgray',width:'80%'}}>
+     
+      <ProjectSection>
         <h1>DSA Visualizations</h1>
         <Project onClick={() => setShow(true)}>beSocial</Project>
         <Project onClick={() => setShow(true)}>beSocial</Project>
         <Project onClick={() => setShow(true)}>beSocial</Project>
         <Project onClick={() => setShow(true)}>beSocial</Project>
-      </div>
-      <br></br>
+      </ProjectSection>
 
     </ProjectsContainer>
   )

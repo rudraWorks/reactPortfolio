@@ -25,7 +25,7 @@ const About = styled.div`
     height:100%;
     background:white;
     overflow-y:scroll;
-    padding:30px;
+    padding:20px;
 `
 const Title = styled.div`
 

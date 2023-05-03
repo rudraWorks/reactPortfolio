@@ -37,6 +37,7 @@ function Navbar() {
             <NavButtons current={pageObj.home} onClick={()=>dispatch(pageStateActions.setHome())}>Home</NavButtons>
             <NavButtons current={pageObj.about} onClick={()=>dispatch(pageStateActions.setAbout())}>About</NavButtons>
             <NavButtons current={pageObj.projects} onClick={()=>dispatch(pageStateActions.setProjects())}>Projects</NavButtons>
+            <NavButtons current={pageObj.certif} onClick={()=>dispatch(pageStateActions.setCertif())}>Certif.</NavButtons>
             <NavButtons current={pageObj.contact} onClick={()=>dispatch(pageStateActions.setContact())}>Contact</NavButtons>
         </NavbarUI>
     </div>

@@ -2,9 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     home:false,
-    about:true,
+    about:false,
     projects:false,
-    contact:false
+    contact:false,
+    certif:true,
 }
 
 const pageStateSlice = createSlice({
@@ -16,25 +17,40 @@ const pageStateSlice = createSlice({
             state.about=false;
             state.projects=false;
             state.contact=false;
+            state.certif=false;
+
         },
         setAbout(state,actions){
             state.home=false;
             state.about=true;
             state.projects=false;
             state.contact=false;
+            state.certif=false;
+
         },
         setProjects(state,actions){
             state.home=false;
             state.about=false;
             state.projects=true;
             state.contact=false;
+            state.certif=false;
+
         },
         setContact(state,actions){
             state.home=false;
             state.about=false;
             state.projects=false;
             state.contact=true;
-        }
+            state.certif=false;
+        },
+        setCertif(state,actions){
+            state.home=false;
+            state.about=false;
+            state.projects=false;
+            state.contact=false;
+            state.certif=true;
+        },
+
     }
 })
 
