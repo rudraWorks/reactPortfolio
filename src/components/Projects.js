@@ -172,29 +172,30 @@ function Projects() {
   const [project, setProject] = useState({ projectName: 'beSocial', projectDescription: 'it is a social media site' })
 
   return (
-    <ProjectsContainer>
-      <Modal isShow={show} close={() => setShow((p) => !p)} title={project.projectName} about={about} ></Modal>
+    <>
+          <Modal isShow={show} close={() => setShow((p) => !p)} title={project.projectName} about={about} ></Modal>
+          <ProjectsContainer>
+            <ProjectSection>
+              <h1>Nodejs Projects</h1>
+              <Project onClick={() => setShow(true)}>beSocial</Project>
+              <Project onClick={() => setShow(true)}>liveType</Project>
+              <Project onClick={() => setShow(true)}>typeMaster</Project>
+              <Project onClick={() => setShow(true)}>Live Chat Application</Project>
+              <Project onClick={() => setShow(true)}>Book Management System</Project>
+              <Project onClick={() => setShow(true)}>Weather App</Project>
+            </ProjectSection>
 
-      <ProjectSection>
-        <h1>Nodejs Projects</h1>
-        <Project onClick={() => setShow(true)}>beSocial</Project>
-        <Project onClick={() => setShow(true)}>liveType</Project>
-        <Project onClick={() => setShow(true)}>typeMaster</Project>
-        <Project onClick={() => setShow(true)}>Live Chat Application</Project>
-        <Project onClick={() => setShow(true)}>Book Management System</Project>
-        <Project onClick={() => setShow(true)}>Weather App</Project>
-      </ProjectSection>
+          
+            <ProjectSection>
+              <h1>DSA Visualizations</h1>
+              <Project onClick={() => setShow(true)}>beSocial</Project>
+              <Project onClick={() => setShow(true)}>beSocial</Project>
+              <Project onClick={() => setShow(true)}>beSocial</Project>
+              <Project onClick={() => setShow(true)}>beSocial</Project>
+            </ProjectSection>
 
-     
-      <ProjectSection>
-        <h1>DSA Visualizations</h1>
-        <Project onClick={() => setShow(true)}>beSocial</Project>
-        <Project onClick={() => setShow(true)}>beSocial</Project>
-        <Project onClick={() => setShow(true)}>beSocial</Project>
-        <Project onClick={() => setShow(true)}>beSocial</Project>
-      </ProjectSection>
-
-    </ProjectsContainer>
+          </ProjectsContainer>
+    </>
   )
 }
 

@@ -2,15 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import reactDom from 'react-dom'
 
-const MODAL_STYLES = {
-    position:'fixed',
-    top:'50%',
-    left:'50%',
-    transform:'translate(-50%,-50%)',
-    width:'90%',
-    height:'90%',
-    zIndex:10,
-}
+
+let ModalContainer = styled.div`
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-52%);
+    width:90%;
+    height:90%;
+    z-index:10;
+`
 
 let Overlay = styled.div`
     position:fixed;
@@ -27,7 +28,6 @@ const About = styled.div`
     overflow-y:scroll;
     padding:20px;
     display:flex;
-    // justify-content:center;
     align-items:center;
     flex-direction:column;
 `
@@ -62,7 +62,7 @@ function Modal({isShow,close,title,about}) {
   return reactDom.createPortal(
     <>
         <Overlay></Overlay>
-        <div style={MODAL_STYLES}>
+        <ModalContainer>
             <Header>
               <Title>{title}</Title>
               <Button onClick={()=>{  document.getElementsByTagName('body')[0].style.overflow="scroll";close()}}>X</Button>
@@ -71,7 +71,7 @@ function Modal({isShow,close,title,about}) {
             <About>
                 {about}
             </About>
-        </div>
+        </ModalContainer>
     </>,
     document.getElementById('portal')
   )
