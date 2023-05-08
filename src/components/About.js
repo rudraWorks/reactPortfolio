@@ -7,7 +7,6 @@ const AboutContainer = styled.div`
 const Section = styled.div`
   padding:30px;
   background:lightgray;
-  font-weight:bolder;
   margin-bottom:40px;
   border-radius:20px;
 `
