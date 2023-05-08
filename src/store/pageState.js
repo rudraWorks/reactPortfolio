@@ -3,13 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     home:false,
     about:false,
-    projects:false,
+    projects:true,
     contact:false,
-    certif:true,
+    certif:false,
 }
 
 const pageStateSlice = createSlice({
-    name:'pageState',
+    name:'pageState', 
     initialState,
     reducers:{
         setHome(state,actions){

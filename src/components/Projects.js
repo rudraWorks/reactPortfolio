@@ -5,70 +5,101 @@ import styled from 'styled-components'
 
 const ProjectsContainer = styled.div`
 
-      // background:pink;
       display:flex;
       justify-content:center;
       align-items:center;
       flex-direction:column;
       padding-top:30px;
 `
+
+const ProjectSection = styled.div`
+
+  padding:20px;
+  width:80%;
+  margin-bottom:40px;
+  color:white;
+  font-weight:bolder;
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:#3b49df;
+`
+
 const Project = styled.div`
-  background:#cccccc;
-  width:100%;
+  background:rgba(98,109,230,1);
+  width:90%;
   cursor:pointer;
   margin-bottom:10px;
   margin-top:10px;
   padding:10px;
   &:hover{
-    background:#808080;
+    background:rgba(108,119,250,1);
   }
   font-size:20px;
+  border-radius:5px;
 `
-const BoxDiv = styled.div`
-  background:#999999;
 
+/* ------- -------*/
+const BoxDiv = styled.div`
+  background:#3b49df;
+  border-radius:20px;
+  color:white;
   display:flex;
   flex-direction:column;
-  width:100%;
-  padding:5px;
+  align-items:center;
+  width:95%;
+  padding-top:30px;
+  padding-bottom:30px;
   margin-bottom:30px;
   // border:1px solid black;
+  text-align:left;
 `
 const InnterBoxDiv = styled.div`
-  background:#808080;
-  display:flex;
+background:rgba(98,109,230,1);
+display:flex;
+
   flex-direction:column;
-  width:100%;
+  width:90%;
   padding:5px;
   margin-bottom:10px;
   // border:1px solid black;
+  align-items:center;
+  text-align:left;
+  border-radius:10px;
 `
 const Row = styled.div`
-  background:#cccccc;
-  margin:3px;
-  padding:3px;
-  // border:1px solid black;
+background:rgba(108,119,250,1);
+margin:3px;
+  padding:10px;
+  width:90%;
+  border-radius:10px;
 `
 
 const about = ( 
   <>
   <BoxDiv>
-    <h1 style={{textAlign:'center'}}>About</h1>
-    <Row>
-      <img style={{maxWidth:'100px'}} src='https://rudrapratap.netlify.app/assests/bSocialLogo.PNG'></img>
-</Row>
-    <Row>beSocial is a social media cum blogging platform</Row>
-    <Row>Users can share posts (including images)</Row>
-    <Row> Users can change their display picture (dp)</Row>
-    <Row>Users can follow/unfollow other users</Row>
-    <Row>Logged in users, can like and comment on posts</Row>
-    <Row>Users can search other users by their user id</Row>
-    <Row>Users can update their bio, name, age etc. (basic info)</Row>
-    <Row>Users can't share a post having profane words</Row>
+    <InnterBoxDiv>
+        <h1 style={{textAlign:'center'}}>About</h1>
+        <br></br>
+        <Row>
+          <img style={{maxWidth:'100px'}} src='https://rudrapratap.netlify.app/assests/bSocialLogo.PNG'></img>
+    </Row>
+        <Row>beSocial is a social media cum blogging platform</Row>
+        <Row>Users can share posts (including images)</Row>
+        <Row> Users can change their display picture (dp)</Row>
+        <Row>Users can follow/unfollow other users</Row>
+        <Row>Logged in users, can like and comment on posts</Row>
+        <Row>Users can search other users by their user id</Row>
+        <Row>Users can update their bio, name, age etc. (basic info)</Row>
+        <Row>Users can't share a post having profane words</Row>
+    </InnterBoxDiv>
   </BoxDiv>
 
   <BoxDiv>
-  <h1 style={{textAlign:'center'}}>Tech Stack</h1>
+  <h1 style={{textAlign:'left'}}>Tech Stack</h1>
+  <br></br>
   <InnterBoxDiv>
     <h2>Backend</h2>
     <Row>Nodejs</Row>
@@ -116,7 +147,8 @@ const about = (
 
   </BoxDiv>
   <BoxDiv>
-  <h1 style={{textAlign:'center'}}>Snapshots</h1>
+  <h1 style={{textAlign:'left'}}>Snapshots</h1>
+  <br></br>
   <Row>
     <img style={{width:'100%'}} src='https://rudrapratap.netlify.app/assests/besocial/homepage.PNG'></img>
   </Row>
@@ -134,13 +166,6 @@ const about = (
 
 )
 
-const ProjectSection = styled.div`
-
-  padding:20px;
-  background:#999999;
-  width:80%;
-  margin-bottom:40px;
-`
 
 function Projects() {
   const [show, setShow] = useState(false)

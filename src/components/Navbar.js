@@ -18,7 +18,7 @@ const NavbarUI = styled.div`
 const NavButtons = styled.div`
     width:100px;
     height:100%;
-    background:${props=>props.current?"white":"transparent"};
+    background:${props=>props.current?"#f5f5f5":"transparent"};
     display:flex;
     justify-content:center;
     align-items:center;

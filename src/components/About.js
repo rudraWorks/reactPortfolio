@@ -2,8 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const AboutContainer = styled.div`
-
   padding:30px;
+`
+const Section = styled.div`
+  padding:30px;
+  background:lightgray;
+  font-weight:bolder;
+  margin-bottom:40px;
+  border-radius:20px;
 `
 
 const Span = styled.div`
@@ -31,7 +37,7 @@ function About() {
   return (
     <AboutContainer>
 
-    <div style={{padding:'30px',background:'lightgray'}}>
+    <Section>
         <h1>Education</h1>
         <br></br>
         <h2>Graduation</h2>
@@ -56,10 +62,9 @@ function About() {
         2013-2017
         <br></br>
         CGPA 10
-    </div>
+    </Section>
     
-    <br></br><br></br>
-    <div  style={{padding:'30px',background:'lightgray'}}>
+    <Section>
 
         <h1>Tools and Technologies</h1>
         <br></br>
@@ -94,7 +99,7 @@ function About() {
         </Div>
     
       
-    </div>
+    </Section>
 
     </AboutContainer>
   )

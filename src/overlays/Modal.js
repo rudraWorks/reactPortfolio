@@ -23,9 +23,13 @@ let Overlay = styled.div`
 `
 const About = styled.div`
     height:100%;
-    background:white;
+    background:#f5f5f5;
     overflow-y:scroll;
     padding:20px;
+    display:flex;
+    // justify-content:center;
+    align-items:center;
+    flex-direction:column;
 `
 const Title = styled.div`
 
