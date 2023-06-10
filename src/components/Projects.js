@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import Modal from '../overlays/Modal'
 import styled from 'styled-components'
+import { modalStateActions } from '../store/modalState'
+import { useSelector,useDispatch } from 'react-redux'
 
 const ProjectsContainer = styled.div`
 
@@ -173,31 +175,27 @@ const about = (
 
 
 function Projects() {
-  const [show, setShow] = useState(false)
+  const dispatch = useDispatch()
+  const modalOn = useSelector(state=>state.modalState)
   const [project, setProject] = useState({ projectName: 'beSocial', projectDescription: 'it is a social media site' })
-
+   
   return (
     <>
-          <Modal isShow={show} close={() => setShow((p) => !p)} title={project.projectName} about={about} ></Modal>
+          <Modal isShow={modalOn.on} close={() =>  dispatch(modalStateActions.isOn())}  title={project.projectName} about={about} ></Modal>
+
           <ProjectsContainer>
             <ProjectSection>
               <h2>Nodejs Projects</h2>
-              <Project onClick={() => setShow(true)}>beSocial</Project>
-              <Project onClick={() => setShow(true)}>liveType</Project>
-              <Project onClick={() => setShow(true)}>typeMaster</Project>
-              <Project onClick={() => setShow(true)}>Live Chat Application</Project>
-              <Project onClick={() => setShow(true)}>Book Management System</Project>
-              <Project onClick={() => setShow(true)}>Weather App</Project>
+              <Project onClick={() => dispatch(modalStateActions.isOn())}>beSocial</Project>
+              <Project onClick={() => dispatch(modalStateActions.isOn())}>liveType</Project>
+              <Project onClick={() => dispatch(modalStateActions.isOn())}>typeMaster</Project>
+              <Project onClick={() => dispatch(modalStateActions.isOn())}>Live Chat Application</Project>
+              <Project onClick={() => dispatch(modalStateActions.isOn())}>Book Management System</Project>
+              <Project onClick={() => dispatch(modalStateActions.isOn())}>Weather App</Project>
             </ProjectSection>
 
           
-            <ProjectSection>
-              <h2>DSA Visualizations</h2>
-              <Project onClick={() => setShow(true)}>beSocial</Project>
-              <Project onClick={() => setShow(true)}>beSocial</Project>
-              <Project onClick={() => setShow(true)}>beSocial</Project>
-              <Project onClick={() => setShow(true)}>beSocial</Project>
-            </ProjectSection>
+
 
           </ProjectsContainer>
     </>

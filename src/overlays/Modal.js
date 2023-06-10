@@ -11,9 +11,11 @@ let ModalContainer = styled.div`
     width:70%;
     height:85%;
     z-index:10;
+    border-radius:20px;
     @media only screen and (max-width: 600px){
         width:90%;
     }
+    
 `
 
 let Overlay = styled.div`
@@ -22,8 +24,9 @@ let Overlay = styled.div`
     left:0;
     bottom:0;
     right:0;
-    background-color:rgba(0,0,0,.75);
+    background-color:rgba(0,0,0,.45);
     z-index:10;
+    
 `
 const About = styled.div`
     height:100%;
@@ -33,6 +36,9 @@ const About = styled.div`
     display:flex;
     align-items:center;
     flex-direction:column;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+
 `
 const Title = styled.div`
 
@@ -45,6 +51,8 @@ const Header = styled.div`
     width:100%;
     color:white;
     align-items:center;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
 `
 const Button = styled.button`
     width:40px;
@@ -61,14 +69,13 @@ function Modal({isShow,close,title,about}) {
 
   if(!isShow)return null 
   document.getElementsByTagName('body')[0].style.overflow="hidden"
-
   return reactDom.createPortal(
     <>
         <Overlay></Overlay>
         <ModalContainer>
             <Header>
               <Title>{title}</Title>
-              <Button onClick={()=>{  document.getElementsByTagName('body')[0].style.overflow="scroll";close()}}>X</Button>
+              <Button onClick={()=>{  ;close()}}>X</Button>
             </Header>
 
             <About>

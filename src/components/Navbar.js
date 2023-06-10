@@ -20,7 +20,7 @@ const NavbarUI = styled.div`
     padding-right:30px;
     flex-wrap:wrap;
     align-items:center;
-    padding:5px;
+    padding:10px;
 `
 
 const NavButtons = styled.div`
@@ -49,9 +49,9 @@ function Navbar() {
             <NavButtons current={pageObj.home} onClick={()=>dispatch(pageStateActions.setHome())}>Home</NavButtons>
             <NavButtons current={pageObj.about} onClick={()=>dispatch(pageStateActions.setAbout())}>About</NavButtons>
             <NavButtons current={pageObj.projects} onClick={()=>dispatch(pageStateActions.setProjects())}>Projects</NavButtons>
-            <NavButtons current={pageObj.certif} onClick={()=>dispatch(pageStateActions.setCertif())}>Certif.</NavButtons>
+            <NavButtons current={pageObj.certif} onClick={()=>dispatch(pageStateActions.setCertif())}>Certificates</NavButtons>
             <NavButtons current={pageObj.contact} onClick={()=>dispatch(pageStateActions.setContact())}>Contact</NavButtons>
-            <NavButtons current={pageObj.contact} onClick={()=>dispatch(pageStateActions.setContact())}>Blog</NavButtons>
+            <NavButtons current={pageObj.blog} onClick={()=>dispatch(pageStateActions.setBlog())}>Blog</NavButtons>
 
         </NavbarUI>
     </div>

@@ -6,6 +6,7 @@ const initialState = {
     projects:true,
     contact:false,
     certif:false,
+    blog:false,
 }
 
 const pageStateSlice = createSlice({
@@ -18,7 +19,7 @@ const pageStateSlice = createSlice({
             state.projects=false;
             state.contact=false;
             state.certif=false;
-
+            state.blog=false;
         },
         setAbout(state,actions){
             state.home=false;
@@ -26,7 +27,7 @@ const pageStateSlice = createSlice({
             state.projects=false;
             state.contact=false;
             state.certif=false;
-
+            state.blog=false;
         },
         setProjects(state,actions){
             state.home=false;
@@ -34,7 +35,7 @@ const pageStateSlice = createSlice({
             state.projects=true;
             state.contact=false;
             state.certif=false;
-
+            state.blog=false;
         },
         setContact(state,actions){
             state.home=false;
@@ -42,6 +43,7 @@ const pageStateSlice = createSlice({
             state.projects=false;
             state.contact=true;
             state.certif=false;
+            state.blog=false;
         },
         setCertif(state,actions){
             state.home=false;
@@ -49,8 +51,16 @@ const pageStateSlice = createSlice({
             state.projects=false;
             state.contact=false;
             state.certif=true;
+            state.blog=false;
         },
-
+        setBlog(state,actions){
+            state.home=false;
+            state.about=false;
+            state.projects=false;
+            state.contact=false;
+            state.certif=false;
+            state.blog=true;
+        } 
     }
 })
 
