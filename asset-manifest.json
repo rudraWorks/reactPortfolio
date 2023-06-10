@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactPortfolio/static/css/main.68ba63c4.css",
-    "main.js": "/reactPortfolio/static/js/main.b866bb8d.js",
+    "main.js": "/reactPortfolio/static/js/main.2d84dafc.js",
     "static/js/787.1f11dfe9.chunk.js": "/reactPortfolio/static/js/787.1f11dfe9.chunk.js",
     "static/media/algorithmic-toolbox.jpg": "/reactPortfolio/static/media/algorithmic-toolbox.be5e6f30dfa54855b741.jpg",
     "static/media/nodejs.jpg": "/reactPortfolio/static/media/nodejs.32412eb83fd216d4a2cf.jpg",
@@ -9,11 +9,11 @@
     "static/media/Nptel_algorithms_and_analysis.jpg": "/reactPortfolio/static/media/Nptel_algorithms_and_analysis.24a3339b099d9afdf85f.jpg",
     "index.html": "/reactPortfolio/index.html",
     "main.68ba63c4.css.map": "/reactPortfolio/static/css/main.68ba63c4.css.map",
-    "main.b866bb8d.js.map": "/reactPortfolio/static/js/main.b866bb8d.js.map",
+    "main.2d84dafc.js.map": "/reactPortfolio/static/js/main.2d84dafc.js.map",
     "787.1f11dfe9.chunk.js.map": "/reactPortfolio/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68ba63c4.css",
-    "static/js/main.b866bb8d.js"
+    "static/js/main.2d84dafc.js"
   ]
 }
