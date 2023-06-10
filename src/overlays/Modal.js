@@ -75,7 +75,7 @@ function Modal({isShow,close,title,about}) {
         <ModalContainer>
             <Header>
               <Title>{title}</Title>
-              <Button onClick={()=>{  ;close()}}>X</Button>
+              <Button onClick={()=>{  document.getElementsByTagName('body')[0].style.overflow="scroll";close()}}>X</Button>
             </Header>
 
             <About>
