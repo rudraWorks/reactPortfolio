@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactPortfolio/static/css/main.1f94e78d.css",
-    "main.js": "/reactPortfolio/static/js/main.4922cc29.js",
+    "main.js": "/reactPortfolio/static/js/main.128fdaa5.js",
     "static/js/787.1f11dfe9.chunk.js": "/reactPortfolio/static/js/787.1f11dfe9.chunk.js",
     "static/media/algorithmic-toolbox.jpg": "/reactPortfolio/static/media/algorithmic-toolbox.be5e6f30dfa54855b741.jpg",
     "static/media/nodejs.jpg": "/reactPortfolio/static/media/nodejs.32412eb83fd216d4a2cf.jpg",
@@ -10,11 +10,11 @@
     "static/media/loading-gif.gif": "/reactPortfolio/static/media/loading-gif.803f24369a085e35482e.gif",
     "index.html": "/reactPortfolio/index.html",
     "main.1f94e78d.css.map": "/reactPortfolio/static/css/main.1f94e78d.css.map",
-    "main.4922cc29.js.map": "/reactPortfolio/static/js/main.4922cc29.js.map",
+    "main.128fdaa5.js.map": "/reactPortfolio/static/js/main.128fdaa5.js.map",
     "787.1f11dfe9.chunk.js.map": "/reactPortfolio/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f94e78d.css",
-    "static/js/main.4922cc29.js"
+    "static/js/main.128fdaa5.js"
   ]
 }
