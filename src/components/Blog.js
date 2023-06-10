@@ -51,7 +51,7 @@ function Blog() {
                 {showLoader && <img src={loadingGif} style={{width:"100px",marginTop:"30px"}}></img>}
 
                 {articles.map(item=><a href={item.url} target='_blank' style={{textDecoration:"none"}} ><Article key={Math.random()*Math.random()  }>
-                    <img style={{width:"300px",borderRadius:"5px"}} src={item.social_image}></img>
+                    <img style={{width:"250px",borderRadius:"5px"}} src={item.social_image}></img>
                     <br></br>
                     <div style={{display:"flex",alignItems:"center"}}>
                      <span style={{marginRight:"15px"}}>🧡 {item.public_reactions_count}</span>   <span>✍️ {item.comments_count}</span>

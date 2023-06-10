@@ -7,7 +7,7 @@ import {useDispatch,useSelector} from 'react-redux'
 
 
 const NavbarUI = styled.div`
-    min-height:40px;
+    min-height:70px;
     width:100%;
     // background:#26619c; 
     background:#4f5055;
@@ -21,6 +21,7 @@ const NavbarUI = styled.div`
     flex-wrap:wrap;
     align-items:center;
     padding:10px;
+    font-size:20px;
 `
 
 const NavButtons = styled.div`
@@ -31,8 +32,8 @@ const NavButtons = styled.div`
     justify-content:space-around;
     align-items:center;
     cursor:pointer; 
-    margin-left:3px;
-    margin-right:3px;
+    margin-left:8px;
+    margin-right:8px;
     color:${props=>props.current?"black":"white"};
     padding:3px;
     font-weight:bolder;
