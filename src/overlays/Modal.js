@@ -4,13 +4,16 @@ import reactDom from 'react-dom'
 
 
 let ModalContainer = styled.div`
-    position:absolute;
+    position:fixed;
     top:50%;
     left:50%;
     transform:translate(-50%,-52%);
-    width:90%;
-    height:90%;
+    width:70%;
+    height:85%;
     z-index:10;
+    @media only screen and (max-width: 600px){
+        width:90%;
+    }
 `
 
 let Overlay = styled.div`

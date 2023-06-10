@@ -15,30 +15,34 @@ const ProjectsContainer = styled.div`
 const ProjectSection = styled.div`
 
   padding:20px;
-  width:80%;
+  width:92%;
   margin-bottom:40px;
-  color:white;
+  color:black;
   font-weight:bolder;
-  border-radius:10px;
+  border-radius:20px;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  background:#3b49df;
+  // background:#3b49df;
+  background:lightgray;
 `
 
 const Project = styled.div`
-  background:rgba(98,109,230,1);
+  // background:rgba(98,109,230,1);
+  background:darkgray;
   width:90%;
   cursor:pointer;
   margin-bottom:10px;
   margin-top:10px;
   padding:10px;
   &:hover{
-    background:rgba(108,119,250,1);
+    // background:rgba(108,119,250,1);
+    background:gray;
   }
   font-size:20px;
   border-radius:5px;
+  font-weight:400;
 `
 
 /* ------- -------*/

@@ -7,9 +7,7 @@ const HomeContainer = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
-  @media (max-width: 950px) {
-    flex-direction: column;
-  }
+  flex-direction:column;
 
 `
 
@@ -31,7 +29,7 @@ function Home() {
   return (
     <HomeContainer>
       <Left>
-          <img style={{width:'200px',borderRadius:'50%'}} src='https://rudrapratap.netlify.app/assests/mebg.png'></img>
+          <img style={{width:'150px',borderRadius:'10%'}} src='https://rudrapratap.netlify.app/assests/mebg.png'></img>
       </Left>
       <Right>
           Exploring web development, creating cool stuffs with Python and programming is one of the most exciting things I've done. It feels like the perfect blend of fields to really understand how computers work and how they can be manipulated to create something truly magical.

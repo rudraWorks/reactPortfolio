@@ -9,10 +9,15 @@ import {useDispatch,useSelector} from 'react-redux'
 const NavbarUI = styled.div`
     height:40px;
     width:100%;
-    background:#26619c; 
+    // background:#26619c; 
+    background:#4f5055;
     color:white;
     display:flex;
     justify-content:center;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    padding-left:30px;
+    padding-right:30px;
 `
 
 const NavButtons = styled.div`
@@ -20,11 +25,15 @@ const NavButtons = styled.div`
     height:100%;
     background:${props=>props.current?"#f5f5f5":"transparent"};
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
+    flex-wrap:wrap;
     cursor:pointer; 
+    margin-left:3px;
+    margin-right:3px;
     color:${props=>props.current?"black":"white"};
-
+    padding:3px;
+    font-weight:bolder;
 `
 
 function Navbar() {
@@ -39,6 +48,8 @@ function Navbar() {
             <NavButtons current={pageObj.projects} onClick={()=>dispatch(pageStateActions.setProjects())}>Projects</NavButtons>
             <NavButtons current={pageObj.certif} onClick={()=>dispatch(pageStateActions.setCertif())}>Certif.</NavButtons>
             <NavButtons current={pageObj.contact} onClick={()=>dispatch(pageStateActions.setContact())}>Contact</NavButtons>
+            <NavButtons current={pageObj.contact} onClick={()=>dispatch(pageStateActions.setContact())}>Blog</NavButtons>
+
         </NavbarUI>
     </div>
   )
