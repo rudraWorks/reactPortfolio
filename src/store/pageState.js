@@ -3,10 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     home:false,
     about:false,
-    projects:true,
+    projects:false,
     contact:false,
     certif:false,
-    blog:false,
+    blog:true,
 }
 
 const pageStateSlice = createSlice({
