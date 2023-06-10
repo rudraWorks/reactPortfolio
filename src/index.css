@@ -17,7 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: springgreen;
+  background-color: rgb(166, 179, 189);
   display: flex;
   flex-direction: column;
   justify-content: center;

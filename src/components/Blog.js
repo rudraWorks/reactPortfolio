@@ -55,7 +55,7 @@ function Blog() {
                     <br></br>
                     <div style={{display:"flex",alignItems:"center"}}>
                      <span style={{marginRight:"15px"}}>🧡 {item.public_reactions_count}</span>   <span>✍️ {item.comments_count}</span>
-                      <span style={{marginLeft:"auto"}}>📅 { new Date(Date.parse(item.created_at)).getDate() }/{ new Date(Date.parse(item.created_at)).getMonth()+1 }/{ new Date(Date.parse(item.created_at)).getFullYear() }</span>
+                      <span style={{marginLeft:"auto"}}>📅 { new Date(item.created_at).getDate() }/{ new Date(Date.parse(item.created_at)).getMonth()+1 }/{ new Date(Date.parse(item.created_at)).getFullYear() }</span>
                     </div>
                 </Article></a>)}
             </BlogDiv>
