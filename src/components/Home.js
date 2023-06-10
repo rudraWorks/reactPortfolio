@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 const HomeContainer = styled.div`
 
-  padding:30px;
+  padding-top:30px;
   display:flex;
   justify-content:center;
   align-items:center;
   flex-direction:column;
-
+  padding-bottom:30px;
 `
 
 const Left = styled.div`

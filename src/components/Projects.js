@@ -14,7 +14,7 @@ const ProjectsContainer = styled.div`
 
 const ProjectSection = styled.div`
 
-  padding:20px;
+  padding:10px;
   width:92%;
   margin-bottom:40px;
   color:black;
@@ -24,7 +24,6 @@ const ProjectSection = styled.div`
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  // background:#3b49df;
   background:lightgray;
 `
 
@@ -33,14 +32,16 @@ const Project = styled.div`
   background:darkgray;
   width:90%;
   cursor:pointer;
-  margin-bottom:10px;
-  margin-top:10px;
-  padding:10px;
+  margin-bottom:5px;
+  margin-top:5px;
+  padding:2px;
+  padding-left:10px;
+  padding-right:10px;
   &:hover{
     // background:rgba(108,119,250,1);
     background:gray;
   }
-  font-size:20px;
+  font-size:18px;
   border-radius:5px;
   font-weight:400;
 `
@@ -180,7 +181,7 @@ function Projects() {
           <Modal isShow={show} close={() => setShow((p) => !p)} title={project.projectName} about={about} ></Modal>
           <ProjectsContainer>
             <ProjectSection>
-              <h1>Nodejs Projects</h1>
+              <h2>Nodejs Projects</h2>
               <Project onClick={() => setShow(true)}>beSocial</Project>
               <Project onClick={() => setShow(true)}>liveType</Project>
               <Project onClick={() => setShow(true)}>typeMaster</Project>
@@ -191,7 +192,7 @@ function Projects() {
 
           
             <ProjectSection>
-              <h1>DSA Visualizations</h1>
+              <h2>DSA Visualizations</h2>
               <Project onClick={() => setShow(true)}>beSocial</Project>
               <Project onClick={() => setShow(true)}>beSocial</Project>
               <Project onClick={() => setShow(true)}>beSocial</Project>
