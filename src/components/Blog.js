@@ -16,7 +16,6 @@ const Article = styled.div`
     margin:10px;
     padding:5px;
     cursor:pointer;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -45,7 +44,6 @@ function Blog() {
 
     return (
         <div style={{marginTop:"30px"}}> 
-            <h1 style={{textAlign:"center"}}>My Articles on Dev.to</h1>
             <BlogDiv>
 
                 {showLoader && <img src={loadingGif} style={{width:"100px",marginTop:"30px"}}></img>}

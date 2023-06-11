@@ -25,15 +25,15 @@ const NavbarUI = styled.div`
 `
 
 const NavButtons = styled.div`
-    width:100px;
+    width:120px;
     height:100%;
     background:${props=>props.current?"#f5f5f5":"transparent"};
     display:flex;
     justify-content:space-around;
     align-items:center;
     cursor:pointer; 
-    margin-left:8px;
-    margin-right:8px;
+    margin-left:2px;
+    margin-right:2px;
     color:${props=>props.current?"black":"white"};
     padding:3px;
     font-weight:bolder;

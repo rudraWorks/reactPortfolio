@@ -63,7 +63,6 @@ const Button = styled.button`
     cursor:pointer;
     border:none;
     font-weight:bolder;
-  
 `
 function Modal({isShow,close,title,about}) {
 
@@ -79,7 +78,7 @@ function Modal({isShow,close,title,about}) {
             </Header>
 
             <About>
-                {about}
+                 {about}
             </About>
         </ModalContainer>
     </>,
