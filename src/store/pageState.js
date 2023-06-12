@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    home:false,
+    home:true,
     about:false,
     projects:false,
     contact:false,
     certif:false,
-    blog:true,
+    blog:false,
 }
 
 const pageStateSlice = createSlice({

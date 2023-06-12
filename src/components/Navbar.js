@@ -7,7 +7,7 @@ import {useDispatch,useSelector} from 'react-redux'
 
 
 const NavbarUI = styled.div`
-    min-height:70px;
+    min-height:60px;
     width:100%;
     // background:#26619c; 
     background:#4f5055;
@@ -38,6 +38,7 @@ const NavButtons = styled.div`
     padding:3px;
     font-weight:bolder;
     border-radius:5px;
+
 `
 
 function Navbar() {
@@ -47,11 +48,15 @@ function Navbar() {
   return ( 
     <div>
         <NavbarUI>
+
             <NavButtons current={pageObj.home} onClick={()=>dispatch(pageStateActions.setHome())}>Home</NavButtons>
             <NavButtons current={pageObj.about} onClick={()=>dispatch(pageStateActions.setAbout())}>About</NavButtons>
             <NavButtons current={pageObj.projects} onClick={()=>dispatch(pageStateActions.setProjects())}>Projects</NavButtons>
+
             <NavButtons current={pageObj.certif} onClick={()=>dispatch(pageStateActions.setCertif())}>Certificates</NavButtons>
+            
             <NavButtons current={pageObj.contact} onClick={()=>dispatch(pageStateActions.setContact())}>Contact</NavButtons>
+
             <NavButtons current={pageObj.blog} onClick={()=>dispatch(pageStateActions.setBlog())}>Blog</NavButtons>
 
         </NavbarUI>

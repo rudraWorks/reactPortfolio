@@ -9,13 +9,14 @@ let ModalContainer = styled.div`
     left:50%;
     transform:translate(-50%,-52%);
     width:70%;
-    height:85%;
+
+    height:85vh;
     z-index:10;
     border-radius:20px;
+
     @media only screen and (max-width: 600px){
         width:90%;
     }
-    
 `
 
 let Overlay = styled.div`
@@ -30,7 +31,7 @@ let Overlay = styled.div`
 `
 const About = styled.div`
     height:100%;
-    background:#f5f5f5;
+    background:whitesmoke; 
     overflow-y:scroll;
     padding:20px;
     display:flex;
@@ -42,7 +43,7 @@ const About = styled.div`
 `
 const Title = styled.div`
 
-    font-size:30px;
+    font-size:20px;
     margin-left:20px;
 `
 const Header = styled.div`
@@ -63,6 +64,7 @@ const Button = styled.button`
     cursor:pointer;
     border:none;
     font-weight:bolder;
+    font-size:20px;
 `
 function Modal({isShow,close,title,about}) {
 
@@ -74,7 +76,7 @@ function Modal({isShow,close,title,about}) {
         <ModalContainer>
             <Header>
               <Title>{title}</Title>
-              <Button onClick={()=>{  document.getElementsByTagName('body')[0].style.overflow="scroll";close()}}>X</Button>
+              <Button onClick={()=>{  document.getElementsByTagName('body')[0].style.overflow="scroll";close()}}>🗙</Button>
             </Header>
 
             <About>

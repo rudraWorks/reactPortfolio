@@ -87,9 +87,9 @@ margin:3px;
 const about = ( 
   <>
   <BoxDiv>
+  <h1 style={{textAlign:'center'}}>Introduction</h1>
+  <br></br>
     <InnterBoxDiv>
-        <h1 style={{textAlign:'center'}}>About</h1>
-        <br></br>
         <Row>
           <img style={{maxWidth:'100px'}} src='https://rudrapratap.netlify.app/assests/bSocialLogo.PNG'></img>
     </Row>

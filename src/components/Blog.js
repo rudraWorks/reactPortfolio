@@ -43,7 +43,6 @@ function Blog() {
     },[])
 
     return (
-        <div style={{marginTop:"30px"}}> 
             <BlogDiv>
 
                 {showLoader && <img src={loadingGif} style={{width:"100px",marginTop:"30px"}}></img>}
@@ -57,7 +56,6 @@ function Blog() {
                     </div>
                 </Article></a>)}
             </BlogDiv>
-        </div>
     )
 }
 

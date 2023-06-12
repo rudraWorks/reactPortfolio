@@ -26,9 +26,8 @@ const ImgDiv = styled.div`
     margin:10px;
 `
 const CertContainer = styled.div`
-    margin-top:40px;
     display:flex;
-    padding:40px;
+    padding:20px;
     flex-wrap:wrap;
     justify-content:space-around;
     align-items:space-around;
